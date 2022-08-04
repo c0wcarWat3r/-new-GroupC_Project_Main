@@ -19,13 +19,7 @@ def profitloss_function(forex):
     result = []
 
     # # Instantiate a file path to the profit and loss csv file 
-
-    ## file path to test
-    file_path = Path.cwd()/"project_group"/"csv_cd"/"profit-and-loss-49.csv"
-    ## another file path to test
-    # file_path = Path.cwd()/"project_group"/"csv_pd"/"profit and loss.csv"
-    ## file path for submission 
-    # file_path = Path.cwd()/"project_group"/"csv_reports"/"profit-and-loss-usd-42.csv"
+    file_path = Path.cwd()/"project_group"/"csv_reports"/"profit-and-loss-usd-42.csv"
     
     # Open file in read mode 
     with file_path.open(mode="r",encoding="UTF-8", newline="") as file: 

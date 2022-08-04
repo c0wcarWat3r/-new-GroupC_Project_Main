@@ -18,13 +18,7 @@ def coh_function(forex):
     results = []
 
     # Instantiate a file path to the cash on hand csv file 
-
-    ## file path to test 
-    file_path = Path.cwd()/"project_group"/"csv_cd"/"cash-on-hand-49.csv"
-    ## another file path to test
-    # file_path = Path.cwd()/"project_group"/"csv_pd"/"cash on hand.csv"
-    ## file path for submission
-    # file_path = Path.cwd()/"project_group"/"csv_reports"/"cash-on-hand-usd-42.csv"
+    file_path = Path.cwd()/"project_group"/"csv_reports"/"cash-on-hand-usd-42.csv"
 
     # Open file in read mode 
     with file_path.open(mode="r",encoding="UTF-8", newline="") as file: 
