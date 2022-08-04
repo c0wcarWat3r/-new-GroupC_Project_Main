@@ -54,7 +54,7 @@ def profitloss_function(forex):
                 # Use dictionary[pd]*forex to convert the difference to SGD 
                 # abs() to convert the negative values to a positive value 
                 # round() to round the difference to 1 decimal place
-                result.append(f"[PROFIT DEFICIT] DAY: {pd} AMOUNT: SGD{round(abs(dictionary[pd]*forex),1)}\n")
+                result.append(f"[PROFIT DEFICIT] DAY: {float(pd)}, AMOUNT: SGD{round(abs(dictionary[pd]*forex),1)}\n")
                 # If this condition is true, is_positive would change to false 
                 is_positive= False
         # After running through the loop above, if is_positive does not change to false and remains true, 
