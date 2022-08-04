@@ -11,7 +11,12 @@ def overhead_function(forex):
     overheads = []
 
     # instantiate a file path to overheads csv file in current working directory 
+
+    ## file path to test
+    # file_path = Path.cwd()/"project_group"/"csv_49"/"overheads-49.csv"
+    ## file path for submission
     file_path = Path.cwd()/"project_group"/"csv_reports"/"overheads-day-42.csv"
+    
 
     # open the csv file in read mode 
     with file_path.open(mode="r",encoding="UTF-8",newline="") as file: 

@@ -1,4 +1,4 @@
-[REAL TIME CURRENCY CONVERSION RATE] USD1 = SGD1.3801
-[Highest Overheads] Salary Expense: SGD39.1
-[CASH DEFICIT] DAY: 39.0, AMOUNT: SGD237672.5
-[NET PROFIT SURPLUS] NET PROFIT ON EACH DAY IS HIGHER THAN THE PREVIOUS DAY
+Thank you for using Alpha Vantage! Our standard API call frequency is 5 calls per minute and 500 calls per day. Please visit https://www.alphavantage.co/premium/ if you would like to target a higher API call frequency.
+Limit reached
+Limit reached
+Limit reached
