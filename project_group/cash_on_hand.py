@@ -11,8 +11,11 @@ def coh_function(forex):
     results = []
 
     # Instantiate a file path to the cash on hand csv file 
+
     ## file path to test 
-    file_path = Path.cwd()/"project_group"/"csv_49"/"cash-on-hand-49.csv"
+    # file_path = Path.cwd()/"project_group"/"csv_cd"/"cash-on-hand-49.csv"
+    ## another file path to test
+    file_path = Path.cwd()/"project_group"/"csv_pd"/"cash on hand.csv"
     ## file path for submission
     # file_path = Path.cwd()/"project_group"/"csv_reports"/"cash-on-hand-usd-42.csv"
 

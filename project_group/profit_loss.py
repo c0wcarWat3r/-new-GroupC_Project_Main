@@ -6,10 +6,11 @@ def profitloss_function(forex):
     import csv
 
     # # Instantiate a file path to the profit and loss csv file 
+
     ## file path to test
-    file_path = Path.cwd()/"project_group"/"csv_49"/"profit-and-loss-49.csv"
+    # file_path = Path.cwd()/"project_group"/"csv_cd"/"profit-and-loss-49.csv"
     ## another file path to test
-    
+    file_path = Path.cwd()/"project_group"/"csv_pd"/"profit and loss.csv"
     ## file path for submission 
     # file_path = Path.cwd()/"project_group"/"csv_reports"/"profit-and-loss-usd-42.csv"
     
