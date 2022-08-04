@@ -12,6 +12,7 @@ c = cash_on_hand.coh_function(forex)
 # assign the profitloss_function to a variable 
 d = profit_loss.profitloss_function(forex)
 
+# create a text file in the current working directory 
 file_path=Path.cwd()/"project_group"/"Summary_report.txt"
 file_path.touch()
 # Open the text file in write mode 
