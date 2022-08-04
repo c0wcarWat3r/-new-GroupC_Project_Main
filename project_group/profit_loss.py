@@ -1,5 +1,12 @@
 # Create a function with a parameter "forex"
 def profitloss_function(forex):
+    """
+    function accepts 1 parameter: forex
+    computes the difference in net profit each day
+    if net profit is not consecutively higher, 
+    it highlights the day where net profit is lower than previous day 
+    and value difference
+    """
     # Import path method from Pathlib
     from pathlib import Path 
     # Import csv module 

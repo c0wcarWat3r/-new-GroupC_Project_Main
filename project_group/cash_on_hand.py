@@ -1,4 +1,11 @@
 def coh_function(forex): 
+    """
+    function accepts 1 parameter: forex
+    computes the difference in cash on hand each day
+    if cash on hand is not consecutively higher, 
+    it highlights the day where cash on hand is lower than previous day 
+    and value difference
+    """
     # Import path method from Pathlib
     from pathlib import Path 
     # Import csv module 

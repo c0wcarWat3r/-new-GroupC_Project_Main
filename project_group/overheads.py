@@ -1,5 +1,10 @@
 # Create a function with a parameter "forex"
 def overhead_function(forex):
+    """
+    function accepts 1 parameter: forex
+    returns the highest overhead category 
+    and its value 
+    """
     # Import path method from Pathlib
     from pathlib import Path 
     # Import csv module 
