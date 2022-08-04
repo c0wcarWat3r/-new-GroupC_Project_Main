@@ -43,10 +43,7 @@ def overhead_function(forex):
     key = str(maximum)
     # use the key to find the value which the category of the highest overhead
     value = dictionary[key]
-    # If the api function incurs a key error and prints the note because of the exception handling, 
-    # we would be multiplying the overheads by a string which would incur a type error
-    # Hence, we used try to run the code as follows:
-    
+    # return the final message 
     return f"[Highest Overheads] {value}: SGD{round(maximum*forex,1)}\n"
 
 

@@ -31,11 +31,9 @@ def coh_function(forex):
             coh.append(float(line[1]))
             # Append the number of days to the empty list 'd' (stands for days)
             d.append(line[0])
-    # If there are 6 days, range would repeat the for loop from index 0 to 6. 
-    # In this case as indexing in python starts from 0, we would need to access the cash on hand values from index 0 to index 5 for all 6 days
-    # Hence, we used the total number of days minus 1 so that the for loop would repeat for index 0 to 5.
+    # Use the total number of days minus 1 so that the for loop would repeat for index 0 to 5.
     day=(len(coh)-1) 
-    # i represents index and range would give 0 to the highest index (in this case 6 days will have indices 0-5 )
+    # i represents index
     # for each index in the range of 0-5,
     for i in range(day):
         # Find the difference between cash on hand for each consecutive day 
@@ -45,11 +43,7 @@ def coh_function(forex):
 
     # Convert nested list into a dictionary where the day number is the key and the difference is the value 
     dictionary =dict(dd)
-    # If the api function incurs a key error and prints the note because of the exception handling, 
-    # we would be multiplying the difference by a string which would incur a type error
-    # Hence, we used try to run the code as follows:
-
-    # set a condition to a new variable stating that it is true 
+    # set a condition to a new variable 'is_positive' stating that it is true 
     is_positive= True
     # Use a for loop to access the values in the dictionary 
     for cd in dictionary:

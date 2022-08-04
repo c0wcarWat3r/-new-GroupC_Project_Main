@@ -32,11 +32,9 @@ def profitloss_function(forex):
             net_profit.append(float(line[4]))
             # Append the number of days to the empty list 'd' (stands for days)
             d.append(line[0])
-    # If there are 6 days, range would repeat the for loop from index 0 to 6. 
-    # In this case as indexing in python starts from 0, we would need to access the cash on hand values from index 0 to index 5 for all 6 days
-    # Hence, we used the total number of days minus 1 so that the for loop would repeat for index 0 to 5.
+    # Use the total number of days minus 1 so that the for loop would repeat for index 0 to 5.
     day=(len(net_profit)-1)  
-    # i represents index and range would give 0 to the highest index (in this case 6 days will have indices 0-5 )
+    # i represents index
     # for each index in the range of 0-5,
     for i in range(day):
         # Find the difference between net profits for each consecutive day 
@@ -46,10 +44,6 @@ def profitloss_function(forex):
 
     # Convert nested list into a dictionary where day number is the key and the difference is the value 
     dictionary=dict(dd)
-    # If the api function incurs a key error and prints the note because of the exception handling, 
-    # we would be multiplying the difference by a string which would incur a type error
-    # Hence, we used try to run the code as follows:
-
     # set a condition to a new variable stating that it is true 
     is_positive= True
     # Use a for loop to access the values in the dictionary 

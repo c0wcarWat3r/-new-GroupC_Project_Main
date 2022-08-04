@@ -1,17 +1,14 @@
 # create a new function 
 def api_function(): 
-    # As Alpha Vantage standard API call frequency is only 5 calls per minute, a message would be printed when user runs the code too many times 
-    # With a different message, the dictionary would change and the system would not be able to find the exact key for rate, incurring a key error
-    # Hence, we used try run the code as follows:
     import requests 
     # Alpha vantage API Key 
     api_key = "1H49MTNIA7TNIJLO"
 
     # Calling API from python 
     url = f"https://www.alphavantage.co/query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=SGD&apikey={api_key}"
-    ####
+    # Use .get() method to access currency data and assign it to 'response'
     response = requests.get(url)
-    ####
+    # Retrieve data as a dictionary with .json() and assign it to 'data'
     data = response.json()
     # From the dictionary "data", extract the rate 
     rate=data['Realtime Currency Exchange Rate']['5. Exchange Rate']
@@ -22,20 +19,17 @@ def api_function():
 
 # Create a new function to extract rate only
 def rate_function(): 
-    # As Alpha Vantage standard API call frequency is only 5 calls per minute, a message would be printed when user runs the code too many times 
-    # With a different message, the dictionary would change and the system would not be able to find the exact key for rate, incurring a key error
-    # Hence, we used try run the code as follows:
     import requests 
     # Alpha vantage API Key 
     api_key = "1H49MTNIA7TNIJLO"
     
     # Calling API from python 
     url = f"https://www.alphavantage.co/query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=SGD&apikey={api_key}"
-    # use get method to access to access currency exchange data and assign it to response
+    # Use get method to access to access currency exchange data and assign it to response
     response = requests.get(url)
-    # retrieve data as a dicitonary with .json() and assign it to data
+    # Retrieve data as a dicitonary with .json() and assign it to data
     data = response.json()
-        # From the dictionary "data", extract the rate 
+    # From the dictionary "data", extract the rate 
     rate=data['Realtime Currency Exchange Rate']['5. Exchange Rate']
     # Convert the rate to a float 
     rate = float(rate)
