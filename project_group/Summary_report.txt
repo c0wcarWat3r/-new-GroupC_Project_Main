@@ -1,4 +1,4 @@
-Thank you for using Alpha Vantage! Our standard API call frequency is 5 calls per minute and 500 calls per day. Please visit https://www.alphavantage.co/premium/ if you would like to target a higher API call frequency.
-Limit reached
-Limit reached
-Limit reached
+[REAL TIME CURRENCY CONVERSION RATE] USD1 = SGD1.3796
+[Highest Overheads] Salary Expense: SGD40.2
+[CASH DEFICIT] DAY: 47.0, AMOUNT: SGD1061236.2[CASH DEFICIT] DAY: 48.0, AMOUNT: SGD1511647.4[CASH DEFICIT] DAY: 49.0, AMOUNT: SGD115317.4
+[PROFIT DEFICIT] DAY: 49.0, AMOUNT: SGD58545.8
