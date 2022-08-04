@@ -54,12 +54,6 @@ def overhead_function(forex):
     # Hence, we used try to run the code as follows:
     
     return f"[Highest Overheads] {value}: SGD{round(maximum*forex,1)}\n"
-    # try: 
-    #     # Return the final message, converting the overhead value to SGD and using round() to round the value up to 1 decimal place
-    #     return f"[Highest Overheads] {value}: SGD{round(maximum*forex,1)}\n"
-    # # If a type error occurs,
-    # except TypeError: 
-    #     pass
 
 
     
