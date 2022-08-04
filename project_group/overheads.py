@@ -18,11 +18,11 @@ def overhead_function(forex):
     # instantiate a file path to overheads csv file in current working directory 
 
     ## file path to test
-    # file_path = Path.cwd()/"project_group"/"csv_cd"/"overheads-49.csv"
+    file_path = Path.cwd()/"project_group"/"csv_cd"/"overheads-49.csv"
     ## another file path to test 
     # file_path = Path.cwd()/"project_group"/"csv_pd"/"overheads.csv"
     ## file path for submission
-    file_path = Path.cwd()/"project_group"/"csv_reports"/"overheads-day-42.csv"
+    # file_path = Path.cwd()/"project_group"/"csv_reports"/"overheads-day-42.csv"
     
 
     # open the csv file in read mode 
@@ -52,12 +52,14 @@ def overhead_function(forex):
     # If the api function incurs a key error and prints the note because of the exception handling, 
     # we would be multiplying the overheads by a string which would incur a type error
     # Hence, we used try to run the code as follows:
-    try: 
-        # Return the final message, converting the overhead value to SGD and using round() to round the value up to 1 decimal place
-        return f"[Highest Overheads] {value}: SGD{round(maximum*forex,1)}\n"
-    # If a type error occurs,
-    except TypeError: 
-        pass
+    
+    return f"[Highest Overheads] {value}: SGD{round(maximum*forex,1)}\n"
+    # try: 
+    #     # Return the final message, converting the overhead value to SGD and using round() to round the value up to 1 decimal place
+    #     return f"[Highest Overheads] {value}: SGD{round(maximum*forex,1)}\n"
+    # # If a type error occurs,
+    # except TypeError: 
+    #     pass
 
 
     
