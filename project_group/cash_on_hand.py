@@ -22,9 +22,9 @@ def coh_function(forex):
     ## file path to test 
     # file_path = Path.cwd()/"project_group"/"csv_cd"/"cash-on-hand-49.csv"
     ## another file path to test
-    file_path = Path.cwd()/"project_group"/"csv_pd"/"cash on hand.csv"
+    # file_path = Path.cwd()/"project_group"/"csv_pd"/"cash on hand.csv"
     ## file path for submission
-    # file_path = Path.cwd()/"project_group"/"csv_reports"/"cash-on-hand-usd-42.csv"
+    file_path = Path.cwd()/"project_group"/"csv_reports"/"cash-on-hand-usd-42.csv"
 
 
     # Open file in read mode 
@@ -73,12 +73,11 @@ def coh_function(forex):
         # After running through the loop above, if is_positive does not change to false and remains true, 
         if is_positive==True:
             # Append this final message into the empty list 'results' instead 
-            results.append(f"[CASH SURPLUS] CASH ON EACH DAY IS HIGHER THAN THE PREVIOUS DAY")
+            results.append(f"[CASH SURPLUS] CASH ON EACH DAY IS HIGHER THAN THE PREVIOUS DAY\n")
         # return the list of results 
         return results
     # If a type error occurs, 
     except TypeError: 
-        # return this final message instead
-        return f"Limit reached"
+        pass 
 
     

@@ -19,11 +19,11 @@ def api_function():
         # Convert the rate to a float 
         rate = float(rate)
         # Return the final message
-        return f"[REAL TIME CURRENCY CONVERSION RATE] USD1 = SGD{rate}"
+        return f"[REAL TIME CURRENCY CONVERSION RATE] USD1 = SGD{rate}\n"
     # When a key error appears, the function follows:
     except KeyError: 
         # A note would be returned 
-        return data["Note"]
+        return f"{data['Note']}\n"
 
 # Create a new function to extract rate only
 def rate_function(): 
@@ -50,4 +50,4 @@ def rate_function():
     # When a key error appears, the function follows:
     except KeyError: 
         # A note would be returned 
-        return data["Note"]
+        return f"{data['Note']}\n"

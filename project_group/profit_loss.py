@@ -12,21 +12,23 @@ def profitloss_function(forex):
     # Import csv module 
     import csv
 
-    # # Instantiate a file path to the profit and loss csv file 
-
-    ## file path to test
-    # file_path = Path.cwd()/"project_group"/"csv_cd"/"profit-and-loss-49.csv"
-    ## another file path to test
-    file_path = Path.cwd()/"project_group"/"csv_pd"/"profit and loss.csv"
-    ## file path for submission 
-    # file_path = Path.cwd()/"project_group"/"csv_reports"/"profit-and-loss-usd-42.csv"
-    
-
     # create 4 empty lists
     net_profit=[]
     dd=[]
     d=[]
     result = []
+
+    # # Instantiate a file path to the profit and loss csv file 
+
+    ## file path to test
+    # file_path = Path.cwd()/"project_group"/"csv_cd"/"profit-and-loss-49.csv"
+    ## another file path to test
+    # file_path = Path.cwd()/"project_group"/"csv_pd"/"profit and loss.csv"
+    ## file path for submission 
+    file_path = Path.cwd()/"project_group"/"csv_reports"/"profit-and-loss-usd-42.csv"
+    
+
+
 
     # Open file in read mode 
     with file_path.open(mode="r",encoding="UTF-8", newline="") as file: 
@@ -68,16 +70,15 @@ def profitloss_function(forex):
                 # Use dictionary[pd]*forex to convert the difference to SGD 
                 # abs() to convert the negative values to a positive value 
                 # round() to round the difference to 1 decimal place
-                result.append(f"[PROFIT DEFICIT] DAY: {float(pd)}, AMOUNT: SGD{round(abs(dictionary[pd]*forex),1)}\n")
+                result.append(f"[PROFIT DEFICIT] DAY: {float(pd)}, AMOUNT: SGD{abs(round((dictionary[pd]*forex),1))}\n")
                 # If this condition is true, is_positive would change to false 
                 is_positive= False
         # After running through the loop above, if is_positive does not change to false and remains true, 
         if is_positive==True:
                 # Append this final message into the empty list 'results' instead 
-                result.append(f"[NET PROFIT SURPLUS] NET PROFIT ON EACH DAY IS HIGHER THAN THE PREVIOUS DAY")
+                result.append(f"[NET PROFIT SURPLUS] NET PROFIT ON EACH DAY IS HIGHER THAN THE PREVIOUS DAY\n")
         # return the list of results 
         return result
     # If a type error occurs, 
     except TypeError: 
-        # return this final message instead
-        return f"Limit reached"
+        pass

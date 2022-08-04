@@ -19,12 +19,8 @@ file_path.touch()
 with file_path.open(mode="w", encoding = "UTF-8") as file: 
     # Use .write() to write the final message returned in api_function into the file 
     file.write(a)
-    # Create a new line 
-    file.write("\n")
     # Use .write() to write the final message returned in overhead_function into the file 
     file.write(b)
-    # Create a new line 
-    file.write("\n")
     # Use .writelines() to write the final message returned in coh_function ('results' returned is a list)
     file.writelines(c)
     # Use .writelines() to write the final message returned in profitloss_function ('results' returned is a list)

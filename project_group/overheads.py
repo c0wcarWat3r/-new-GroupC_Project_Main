@@ -20,9 +20,9 @@ def overhead_function(forex):
     ## file path to test
     # file_path = Path.cwd()/"project_group"/"csv_cd"/"overheads-49.csv"
     ## another file path to test 
-    file_path = Path.cwd()/"project_group"/"csv_pd"/"overheads.csv"
+    # file_path = Path.cwd()/"project_group"/"csv_pd"/"overheads.csv"
     ## file path for submission
-    # file_path = Path.cwd()/"project_group"/"csv_reports"/"overheads-day-42.csv"
+    file_path = Path.cwd()/"project_group"/"csv_reports"/"overheads-day-42.csv"
     
 
     # open the csv file in read mode 
@@ -54,11 +54,10 @@ def overhead_function(forex):
     # Hence, we used try to run the code as follows:
     try: 
         # Return the final message, converting the overhead value to SGD and using round() to round the value up to 1 decimal place
-        return f"[Highest Overheads] {value}: SGD{round(maximum*forex,1)}"
+        return f"[Highest Overheads] {value}: SGD{round(maximum*forex,1)}\n"
     # If a type error occurs,
     except TypeError: 
-        # return this final message 
-        return f"Limit reached"
+        pass
 
 
     
