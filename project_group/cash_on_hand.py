@@ -57,7 +57,7 @@ def coh_function(forex):
                 # Use dictionary[cd]*forex to convert the difference to SGD 
                 # abs() to convert the negative values to a positive value 
                 # round() to round the difference to 1 decimal place
-                results.append(f"[CASH DEFICIT] DAY: {float(cd)}, AMOUNT: SGD{abs(round(((dictionary[cd])*forex),1))}")
+                results.append(f"[CASH DEFICIT] DAY: {float(cd)}, AMOUNT: SGD{abs(round(((dictionary[cd])*forex),1))}\n")
                 # If this condition is true, is_positive would change to false 
                 is_positive= False 
         # After running through the loop above, if is_positive does not change to false and remains true, 

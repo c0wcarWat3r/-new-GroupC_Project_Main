@@ -26,8 +26,6 @@ with file_path.open(mode="w", encoding = "UTF-8") as file:
     file.write("\n")
     # Use .writelines() to write the final message returned in coh_function ('results' returned is a list)
     file.writelines(c)
-    # Create a new line 
-    file.write("\n")
     # Use .writelines() to write the final message returned in profitloss_function ('results' returned is a list)
     file.writelines(d)
 
